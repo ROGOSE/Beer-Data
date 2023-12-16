@@ -171,7 +171,7 @@ header table {
 #tiemposImage {
     width:100%;
     height:95vh;
-    background-image: url("Comparación\ de\ tiempos.jpg"); /*center center;*/
+    background-image: url("Comparación de tiempos.jpg"); /*center center;*/
     background-size:cover;
     background-repeat:no-repeat;
 }
