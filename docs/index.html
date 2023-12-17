@@ -44,25 +44,33 @@
             <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
                 <h1>Beer Data, the Face of Beer Reviews</h1>
                 <button class="btn_one">Grab a Beer</button><br>
-                <!--<table>
-                    <tr>
-                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
-                    </tr>
-                </table>-->
             </td>
             <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
         </tr>
     </table>
     <div id="project">
+
         <h1>Project</h1>
         <p>
             Una gran cantidad de la población mundial consume cerveza frecuentemente. Para aquellas personas que se quieren introducir más a fondo en el extenso mundo de la cerveza, presentamos un proyecto en el que analizaremos una base de datos y sacaremos patrones y estadísticas importantes. Actualmente existen gran cantidad de marcas de cerveza, algunas de ellas muy conocidas, pero esto no implica que sean las mejores. Con este trabajo queremos aportar un punto de vista menos comercial en el que las cervezas se valoren únicamente por su calidad y no por la popularidad.
         </p>
+
         <h2>Need for Big Data</h2>
         <p>
             La subjetividad juega un papel muy importante en este ámbito, cada persona puede tener una opinión distinta sobre la misma cerveza. Por ello también, en la medida de lo posible, queremos centralizar mucha información haciendo uso del Big Data, para así generalizar las múltiples opiniones y facilitar la búsqueda de información al usuario.
+        </p>
+
+        <h2>Technical description of the app, PM, platform and infrastructure</h2>
+        <p>
+            Para el desarrollo del proyecto hemos utilizado las siguientes herramientas e infraestructuras:
+            Github: alojamiento utilizado para los scripts, página web… Haciendo uso de si sistema de control de versiones Git.
+            Google Drive: almacenamiento de datasets.
+            Google Cloud: ejecución de scripts y almacenamiento de CSV’s obtenidos como ejecución de scripts.
+            Apache Spark: herramienta de procesamiento de datos distribuido y análisis de big data a través de clústeres de computadoras
+            Python: lenguaje de programación usado para el desarrollo de los scripts.
+            HTML/JavaScript: lenguaje de programación usada para la página web.
+            Pyspark: biblioteca de Python que ha servido como interfaz para Apache Spark.
+            Visual Code: editor de código fuente para el desarrollo de scripts y código html/javascript para la página web.
         </p>
     </div>
     <div id="data">
@@ -144,17 +152,63 @@
     </div>
     <div id="statistics">
         <h1>Statistics</h1>
-        
-        <h2>Performance</h2>
-        <p>subido</p>
-        <td id="tiemposImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
 
         <h2>Outcome</h2>
-        <p>
-            Tratamos con un Dataset con más de millón y medio de reviews entre los años 1998-2011 con cervezas de todo el mundo en donde se encuentra una descripción detallada de cada cerveza con caracteírsticas fundamentales como el ABV, sabor, apariencia, aroma...</p>
-        <p>
-            Dataset completo alojado en Drive Dataset con el original obtenido de Kaggle y otro creado por nosotros, el script se encuentra alojado en la carpeta code llamado Crear_dataset.py en donde cogiendo todos los aspectos específicos a los que se da una nota de 0-5 (sabor, apariencia, sensación, aroma, impresión general) se les aplican los siguientes porcentajes:
-        </p>
+
+        <p>Resultados. Cervezas por rangos (1 - 5)</p>
+        <img src=".jpg" style="width: 50%; height: auto;"/>
+
+            <p>Cervezas con nota 1.0 o menor</p>
+            <img src=".jpg" style="width: 50%; height: auto;"/>
+
+            <p>Cervezas con nota 5.0 o menor</p>
+            <img src=".jpg" style="width: 50%; height: auto;"/>
+
+        <p>Resultados. Mejores cervezas por años</p>
+        <img src=".jpg" style="width: 50%; height: auto;"/>
+
+        <p>Resultados. Top Cervezas por Cerveceras</p>
+        <img src=".jpg" style="width: 50%; height: auto;"/>
+
+        
+        <p>Comparación de tiempos de las consultas principales</p>
+        <img src="Comparación de tiempos.jpg" style="width: 50%; height: auto;"/>
+
+        <p>CPU Utilization 2</p>
+        <img src="CPU utilization.png" style="width: 50%; height: auto;">
+
+        <p>Disk bytes</p>
+        <img src="Disk bytes.png" style="width: 50%; height: auto;">
+
+        <p>Disk operations</p>
+        <img src="Disk operations.png" style="width: 50%; height: auto;">
+
+        
+        <p>Resultados. Uso de CPU de los rangos (2 y 4 nodos)</p>
+        <img src=".jpg" style="width: 50%; height: auto;"/>
+        
+        <h2>Performance</h2>
+        
+        <p>HDFS capacity</p>
+        <img src="HDFS capacity.png" style="width: 50%; height: auto;"/>
+
+        <img src="Network Bytes.png" style="width: 50%; height: auto;"/>
+        <p>Network Bytes</p>
+
+        <img src="Network Packets.png" style="width: 50%; height: auto;"/>
+        <p>Network Packets</p>
+
+        <img src="YARN NodeManagers.png" style="width: 50%; height: auto;"/>
+        <p>YARN NodeManagers</p>
+
+        <img src="YARN memory.png" style="width: 50%; height: auto;"/>
+        <p>YARN memory</p>
+
+        <img src="YARN pending memory.png" style="width: 50%; height: auto;"/>
+        <p>YARN pending memory</p>
+
+        <td id="tiemposImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+
     </div>
     <div id="conclusion">
         <h1>Conclusion</h1>
